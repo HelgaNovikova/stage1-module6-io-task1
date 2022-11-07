@@ -22,7 +22,7 @@ public class FileReader {
                 l = l + (char) i;
             }
             System.out.println(l);
-            String[] profile = l.split("\r\n");
+            String[] profile = l.split(System.lineSeparator());
             name = profile[0].substring(6);
             age = Integer.parseInt(profile[1].substring(5));
             email = profile[2].substring(7);
